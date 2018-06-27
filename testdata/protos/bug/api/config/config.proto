@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package lyft.pgs.api.config;
+option go_package = "github.com/lyft/protoc-gen-star/testdata/protos/bug/api/config";
+
+import "bug/pkg/config/main.proto";
+import "bug/pkg/config/secondary.proto";
+
+message Fizz {
+    uint64 id           = 1;
+    lyft.pgs.bar.config.Quux three_five = 2;
+    lyft.pgs.bar.config.Baaz four_six = 3;
+}

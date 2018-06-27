@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package lyft.pgs.bar.config;
+option go_package = "github.com/lyft/protoc-gen-star/testdata/protos/bug/pkg/config";
+
+message Quux {
+    uint32 number = 1;
+}
+
